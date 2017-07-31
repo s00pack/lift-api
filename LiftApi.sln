@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiftApi", "LiftApi\LiftApi.csproj", "{34C4F69C-6F11-4C92-B9D3-69F96531C2E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiftApi.Tests", "LiftApi.Tests\LiftApi.Tests.csproj", "{8BB3D98F-3CC1-4934-ADCE-FE1124D069FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34C4F69C-6F11-4C92-B9D3-69F96531C2E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C4F69C-6F11-4C92-B9D3-69F96531C2E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C4F69C-6F11-4C92-B9D3-69F96531C2E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C4F69C-6F11-4C92-B9D3-69F96531C2E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BB3D98F-3CC1-4934-ADCE-FE1124D069FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BB3D98F-3CC1-4934-ADCE-FE1124D069FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BB3D98F-3CC1-4934-ADCE-FE1124D069FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BB3D98F-3CC1-4934-ADCE-FE1124D069FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
