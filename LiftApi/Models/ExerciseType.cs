@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -10,6 +11,8 @@ namespace LiftApi.Models
     /// </summary>
     public class ExerciseType
     {
+        [Key]
+        public int ExerciseTypeId { get; set; }
         /// <summary>
         /// Name of ExerciseType
         /// </summary>
@@ -21,7 +24,7 @@ namespace LiftApi.Models
         /// <summary>
         /// All Excercices in the ExerciseType. Not mandatory. PUT adds Exercises without removing those included. Delete does not delete Exercises.
         /// </summary>
-        public IEnumerable<Exercise> Exercises { get; set; }
+        public virtual List<Exercise> Exercises { get; set; }
 
     }
 

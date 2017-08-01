@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Security.AccessControl;
 using System.Web;
@@ -8,6 +9,8 @@ namespace LiftApi.Models
 {
     public class Exercise
     {
+        [Key]
+        public int ExerciseId { get; set; }
         /// <summary>
         /// Name of Exercise
         /// </summary>

@@ -238,13 +238,17 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ExercisesController.cs" />
+    <Compile Include="Controllers\ExerciseTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\ResultsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Exercise.cs" />
     <Compile Include="Models\ExerciseType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -311,6 +315,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Exercises\Create.cshtml" />
+    <Content Include="Views\Exercises\Delete.cshtml" />
+    <Content Include="Views\Exercises\Details.cshtml" />
+    <Content Include="Views\Exercises\Edit.cshtml" />
+    <Content Include="Views\Exercises\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
