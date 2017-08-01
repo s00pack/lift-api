@@ -8,9 +8,9 @@ namespace LiftApi.Models
     public class Result
     {
         /// <summary>
-        /// Excercise performed
+        /// Exercise performed
         /// </summary>
-        public Excercise Excercise { get; set; }
+        public Exercise Exercise { get; set; }
         /// <summary>
         /// Amount/reps
         /// </summary>

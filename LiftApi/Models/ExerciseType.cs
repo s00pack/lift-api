@@ -6,22 +6,22 @@ using System.Web;
 namespace LiftApi.Models
 {
     /// <summary>
-    /// Group of similar excercises
+    /// Group of similar Exercises
     /// </summary>
-    public class ExcerciseType
+    public class ExerciseType
     {
         /// <summary>
-        /// Name of ExcerciseType
+        /// Name of ExerciseType
         /// </summary>
         public string Name { get; set; }
         /// <summary>
-        /// Description of ExcerciseType
+        /// Description of ExerciseType
         /// </summary>
         public string Description { get; set; }
         /// <summary>
-        /// All Excercices in the ExcerciseType. Not mandatory. PUT adds excercises without removing those included. Delete does not delete Excercises.
+        /// All Excercices in the ExerciseType. Not mandatory. PUT adds Exercises without removing those included. Delete does not delete Exercises.
         /// </summary>
-        public IEnumerable<Excercise> Excercises { get; set; }
+        public IEnumerable<Exercise> Exercises { get; set; }
 
     }
 

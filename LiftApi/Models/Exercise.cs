@@ -6,19 +6,19 @@ using System.Web;
 
 namespace LiftApi.Models
 {
-    public class Excercise
+    public class Exercise
     {
         /// <summary>
-        /// Name of Excercise
+        /// Name of Exercise
         /// </summary>
         public string Name { get; set; }
         /// <summary>
-        /// Description of Excercise
+        /// Description of Exercise
         /// </summary>
         public string Description { get; set; }
         /// <summary>
-        /// Type of Excercise, not mandatory
+        /// Type of Exercise, not mandatory
         /// </summary>
-        public ExcerciseType ExcerciseType { get; set; }
+        public ExerciseType ExerciseType { get; set; }
     }
 }
