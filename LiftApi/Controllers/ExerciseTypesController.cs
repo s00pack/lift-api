@@ -17,9 +17,9 @@ namespace LiftApi.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: api/ExerciseTypes
-        public IQueryable<ExerciseType> GetExerciseTypes()
+        public IEnumerable<ExerciseType> GetExerciseTypes()
         {
-            return db.ExerciseTypes;
+            return db.ExerciseTypes.ToList();
         }
 
         // GET: api/ExerciseTypes/5

@@ -17,9 +17,9 @@ namespace LiftApi.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: api/UserGroups
-        public IQueryable<UserGroup> GetUserGroups()
+        public IEnumerable<UserGroup> GetUserGroups()
         {
-            return db.UserGroups;
+            return db.UserGroups.ToList();
         }
 
         // GET: api/UserGroups/5
