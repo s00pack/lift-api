@@ -23,7 +23,9 @@ namespace LiftApi.Controllers
             _logger.Debug("Enter");
             try
             {
-                return db.UserInfos;
+                var userInfos =  db.UserInfos;
+                _logger.Debug("UserInfos found:{0}", userInfos.Count());
+                return userInfos;
             }
             catch (Exception e)
             {
