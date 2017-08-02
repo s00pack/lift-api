@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using LiftApi.Models;
+using Newtonsoft.Json;
 using NLog;
 
 namespace LiftApi.Controllers
@@ -25,6 +26,7 @@ namespace LiftApi.Controllers
             {
                 var userInfos =  db.UserInfos;
                 _logger.Debug("UserInfos found:{0}", userInfos.Count());
+                _logger.Debug("UserInfos :{0}", JsonConvert.SerializeObject(userInfos, Formatting.Indented, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore }));
                 return userInfos;
             }
             catch (Exception e)
