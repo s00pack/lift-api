@@ -85,6 +85,12 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.5.0-alpha04\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.StructuredEvents, Version=0.1.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.StructuredEvents.0.3.1\lib\net35\NLog.StructuredEvents.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -276,6 +282,14 @@
     <Compile Include="Migrations\201708010858184_Initial.Designer.cs">
       <DependentUpon>201708010858184_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708020622353_Users.cs" />
+    <Compile Include="Migrations\201708020622353_Users.Designer.cs">
+      <DependentUpon>201708020622353_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708020704023_Users1.cs" />
+    <Compile Include="Migrations\201708020704023_Users1.Designer.cs">
+      <DependentUpon>201708020704023_Users1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -322,6 +336,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\PublishProfiles\LiftApi - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -370,6 +390,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201708010858184_Initial.resx">
       <DependentUpon>201708010858184_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708020622353_Users.resx">
+      <DependentUpon>201708020622353_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708020704023_Users1.resx">
+      <DependentUpon>201708020704023_Users1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
