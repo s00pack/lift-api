@@ -8,12 +8,12 @@ namespace LiftApi.Models
     /// <summary>
     /// Addidtional information about a user. Connects to ApplicationUser
     /// </summary>
-    public class User
+    public class UserInfo
     {
         /// <summary>
         /// ID, do not set
         /// </summary>
-        public int UserId { get; set; }
+        public int UserInfoId { get; set; }
 
         /// <summary>
         /// Identification / passsword class, Must be created before User

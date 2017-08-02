@@ -23,5 +23,9 @@ namespace LiftApi.Models
         public System.Data.Entity.DbSet<LiftApi.Models.ExerciseType> ExerciseTypes { get; set; }
 
         public System.Data.Entity.DbSet<LiftApi.Models.Result> Results { get; set; }
+
+        public System.Data.Entity.DbSet<LiftApi.Models.UserInfo> UserInfos { get; set; }
+
+        public System.Data.Entity.DbSet<LiftApi.Models.UserGroup> UserGroups { get; set; }
     }
 }

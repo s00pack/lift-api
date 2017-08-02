@@ -10,6 +10,6 @@ namespace LiftApi.Models
         public int UserGroupId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<UserInfo> Users { get; set; }
     }
 }
