@@ -19,15 +19,16 @@ namespace LiftApi.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
         private Logger _logger = LogManager.GetCurrentClassLogger();
         // GET: api/UserInfos
-        public IQueryable<UserInfo> GetUserInfos()
+        public IEnumerable<UserInfo> GetUserInfos()
         {
             _logger.Debug("Enter");
             try
             {
                 var userInfos =  db.UserInfos;
                 _logger.Debug("UserInfos found:{0}", userInfos.Count());
-                _logger.Debug("UserInfos :{0}", JsonConvert.SerializeObject(userInfos, Formatting.Indented, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore }));
-                return userInfos;
+                var userInfosList = userInfos.ToList();
+            
+                return userInfosList;
             }
             catch (Exception e)
             {
