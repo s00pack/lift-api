@@ -16,9 +16,9 @@ namespace LiftApi.Models
         public int UserInfoId { get; set; }
 
         /// <summary>
-        /// Identification / passsword class, Must be created before User
+        /// Id of Identification / passsword class, Mandatory!
         /// </summary>
-        public ApplicationUser ApplicationUser { get; set; }
+        public int ApplicationUserId { get; set; }
 
         /// <summary>
         /// First name
